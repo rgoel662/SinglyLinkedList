@@ -107,7 +107,7 @@ public class SinglyLinkedList<E extends Comparable<E>>
 	 */
 	public ListNode<E> get(int index) {
 		ListNode<E> ptr = head;
-		for (int i = 1; i < index; i++){
+		for (int i = 1; i <= index; i++){
 			if(ptr == null){
 				throw new NoSuchElementException();
 			}
@@ -124,7 +124,7 @@ public class SinglyLinkedList<E extends Comparable<E>>
 	 */
 	public E set(int index, E obj) {
 		ListNode<E> ptr = head;
-		for (int i = 1; i < index; i++){
+		for (int i = 1; i <= index; i++){
 			if(ptr == null){
 				throw new NoSuchElementException();
 			}
